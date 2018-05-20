@@ -1,0 +1,27 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+  always_update_cookbooks: true
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: ubuntu-16.04
+
+suites:
+  - name: default
+    run_list:
+      - recipe[common::default]
+    verifier:
+      inspec_tests:
+        - test/integration/default
+    attributes:
+      user:
+        name: kuser
+        pw_hash: $6$ffnS3Uow$d5hIhhdBq/F307.vpKzmZFGNZXGJQgRE0tBO3.0VP.tUrsui6WCQYO8tUlRYPGyjl0dSdUv5IFpfH3vPUEGsb0
+        ssh_public_key: 'ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMQF8kIrvIaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaT4Ww= test@testhost'
+
