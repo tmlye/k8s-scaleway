@@ -12,5 +12,7 @@ bash rvm-installer stable
 source /etc/profile.d/rvm.sh
 rvm install ruby-2.4.1
 gem install chef
+gem install berkshelf
 cd /tmp/chef
+find cookbooks -name Berksfile -exec berks vendor cookbooks -b {} \;
 chef-client --config config.rb -z -j $1
