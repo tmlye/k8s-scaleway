@@ -26,5 +26,5 @@ suites:
       docker_version: '18.03.1'
       user:
         name: kuser
-        pw_hash: $6$ffnS3Uow$d5hIhhdBq/F307.vpKzmZFGNZXGJQgRE0tBO3.0VP.tUrsui6WCQYO8tUlRYPGyjl0dSdUv5IFpfH3vPUEGsb0
+        pw_hash: '$6$v5d7PRMZZxjuMCTw$YpJQaGQQoiThV61w2byWYwgZnXFQa5Ns6I/VEhPvqejiGgsesgLXOddaZerSMIUaGXj5gqLWgGqh0AIZOkGoU0'
         ssh_public_key: 'ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMQF8kIrvIgklKRUDT8naQHog1O+4sCZaK35bq2SI4WlyFPWaVTDeXXXST9blsptRn8IuZ0krMSXeONJJsbT4Ww= test@testhost'
