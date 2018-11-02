@@ -4,6 +4,6 @@
     // See https://unix.stackexchange.com/questions/52108/how-to-create-sha512-password-hashes-on-command-line#76337 on how to generate the hash
     "pw_hash": "$6$ffnS3Uow$d5hIhhdBq/F307.vpKzmZFGNZXGJQgRE0tBO3.0VP.tUrsui6WCQYO8tUlRYPGyjl0dSdUv5IFpfH3vPUEGsb0"
   },
-  "docker_version": "18.03.1",
+  "docker_version": "18.06.1",
   "run_list": [ "recipe[master]" ]
 }
