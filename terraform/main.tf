@@ -4,7 +4,7 @@ provider "scaleway" {
 
 data "scaleway_image" "ubuntu" {
   architecture = "${var.architecture}"
-  name         = "Ubuntu Xenial"
+  name         = "Ubuntu Bionic"
 }
 
 resource "scaleway_ip" "master_ip" {}

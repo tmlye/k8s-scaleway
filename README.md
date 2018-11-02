@@ -10,8 +10,8 @@ Terraform creates the infrastructure and chef provisions the servers.
 * You need to set your Scaleway credentials:
 
 ```bash
-    export SCALEWAY_ORGANIZATION="<ACCESS-KEY>"
-    export SCALEWAY_TOKEN="<ACCESS-TOKEN>"
+    export SCALEWAY_ORGANIZATION="<ORGANIZATION-ID>"
+    export SCALEWAY_TOKEN="<SECRET-KEY>"
 ```
 
 ## What happens when you run this
