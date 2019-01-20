@@ -26,6 +26,6 @@ describe command('docker') do
 end
 
 describe docker.version do
-  its('Server.Version') { should cmp >= '18.03'}
-  its('Client.Version') { should cmp >= '18.03'}
+  its('Server.Version') { should cmp >= '18.06'}
+  its('Client.Version') { should cmp >= '18.06'}
 end

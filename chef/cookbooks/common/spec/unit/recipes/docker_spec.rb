@@ -4,10 +4,10 @@
 require 'spec_helper'
 
 describe 'common::docker' do
-  context 'On Ubuntu 16.04' do
+  context 'On Ubuntu 18.04' do
     let(:chef_run) do
-      ChefSpec::SoloRunner.new(platform: 'ubuntu', version: '16.04') do |node|
-        node.override['docker_version'] = '18.03.1'
+      ChefSpec::SoloRunner.new(platform: 'ubuntu', version: '18.04') do |node|
+        node.override['docker_version'] = '18.06.1'
       end.converge(described_recipe)
     end
 

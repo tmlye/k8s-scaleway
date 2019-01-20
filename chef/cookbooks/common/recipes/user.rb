@@ -3,6 +3,8 @@
 # Recipe:: user
 username = node['user']['name']
 
+package 'sudo'
+
 user username do
   home "/home/#{username}"
   shell '/bin/bash'
@@ -11,10 +13,10 @@ end
 
 # Copy authorized_keys so we can log in
 directory "/home/#{username}/.ssh" do
-    mode '0700'
-    owner username
-    group username
-    recursive true
+  mode '0700'
+  owner username
+  group username
+  recursive true
 end
 
 key = node['user']['ssh_public_key']

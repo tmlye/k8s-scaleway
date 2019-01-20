@@ -4,11 +4,11 @@ variable "region" {
 }
 
 variable "server_type" {
-  default     = "ARM64-2GB"
-  description = "See the name column here: https://www.scaleway.com/virtual-cloud-servers/#anchor_starter"
+  default     = "START1-S"
+  description = "Check the name column in the web console for possible values"
 }
 
 variable "architecture" {
-  default     = "arm64"
+  default     = "x86_64"
   description = "Values: arm64 x86_64"
 }

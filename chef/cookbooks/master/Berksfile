@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 source 'https://supermarket.chef.io'
 
-cookbook "common", path: "../common"
+cookbook 'common', path: '../common'
+cookbook 'etcd', '~> 5.5.0'
+cookbook 'kube', '~> 3.0.0'
 metadata
