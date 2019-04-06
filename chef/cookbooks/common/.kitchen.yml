@@ -10,7 +10,7 @@ verifier:
   name: inspec
 
 platforms:
-  - name: ubuntu-16.04
+  - name: ubuntu-18.04
 
 suites:
   - name: default
@@ -20,7 +20,7 @@ suites:
       inspec_tests:
         - test/integration/default
     attributes:
-      docker_version: '18.03.1'
+      docker_version: '18.09.4'
       user:
         name: kuser
         pw_hash: $6$ffnS3Uow$d5hIhhdBq/F307.vpKzmZFGNZXGJQgRE0tBO3.0VP.tUrsui6WCQYO8tUlRYPGyjl0dSdUv5IFpfH3vPUEGsb0

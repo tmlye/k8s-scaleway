@@ -2,4 +2,4 @@
 # Cookbook:: master
 # Recipe:: default
 include_recipe 'common'
-include_recipe 'master::kube'
+include_recipe 'master::kubeadm'

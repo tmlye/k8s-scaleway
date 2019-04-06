@@ -29,6 +29,3 @@ PrintMotd no # pam does that
 AuthorizedKeysFile	.ssh/authorized_keys
 
 UsePrivilegeSeparation yes
-
-# override default of no subsystems
-Subsystem	sftp	/usr/lib/ssh/sftp-server

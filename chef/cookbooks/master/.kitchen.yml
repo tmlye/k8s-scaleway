@@ -23,7 +23,7 @@ suites:
       inspec_tests:
         - test/integration/default
     attributes:
-      docker_version: '18.06.1'
+      docker_version: '18.09.4'
       user:
         name: kuser
         pw_hash: '$6$v5d7PRMZZxjuMCTw$YpJQaGQQoiThV61w2byWYwgZnXFQa5Ns6I/VEhPvqejiGgsesgLXOddaZerSMIUaGXj5gqLWgGqh0AIZOkGoU0'

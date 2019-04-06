@@ -3,6 +3,6 @@
     "name": "kuser",
     "pw_hash": "$6$NsoaQX5d8d5HOXvJ$TKSodAHsB53hZkaw1GeaKReEzGglMa2g2CH6F.cwSYh3BErGkh6udmoKAbJ6IDQVDQM93QpcRcoKnvRCL.Igz/"
   },
-  "docker_version": "18.06.1",
+  "docker_version": "18.09.4",
   "run_list": [ "recipe[master]" ]
 }
