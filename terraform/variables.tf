@@ -4,7 +4,7 @@ variable "region" {
 }
 
 variable "server_type" {
-  default     = "START1-S"
+  default     = "DEV1-S"
   description = "Check the name column in the web console for possible values"
 }
 
