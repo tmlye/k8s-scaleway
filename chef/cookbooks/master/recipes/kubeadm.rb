@@ -24,5 +24,5 @@ execute 'pre-pull kubernetes images' do
 end
 
 execute 'create cluster' do
-  command 'kubeadm init'
+  command 'kubeadm init --ignore-preflight-errors=Swap'
 end
