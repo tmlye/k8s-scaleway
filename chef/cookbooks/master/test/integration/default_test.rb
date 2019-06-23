@@ -1,8 +1,3 @@
-# Inspec test for recipe master::default
-
-# The Inspec reference, with examples and extensive documentation, can be
-# found at http://inspec.io/docs/reference/resources/
-
 describe user('kuser') do
   it { should exist }
 end
@@ -28,16 +23,4 @@ end
 describe docker.version do
   its('Server.Version') { should cmp >= '18.06'}
   its('Client.Version') { should cmp >= '18.06'}
-end
-
-describe command('kubelet') do
-  it { should exist }
-end
-
-describe command('kubeadm') do
-  it { should exist }
-end
-
-describe command('kubectl') do
-  it { should exist }
 end

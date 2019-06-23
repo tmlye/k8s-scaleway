@@ -8,6 +8,8 @@ provisioner:
   # For example:
   #   always_update_cookbooks: <%= !ENV['CI'] %>
   always_update_cookbooks: true
+  client_rb:
+    chef_license: accept
 
 verifier:
   name: inspec
@@ -21,7 +23,7 @@ suites:
       - recipe[master::default]
     verifier:
       inspec_tests:
-        - test/integration/default
+        - test/integration
     attributes:
       docker_version: '18.09.4'
       user:

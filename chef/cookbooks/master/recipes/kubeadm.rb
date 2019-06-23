@@ -18,3 +18,11 @@ package %w(kubelet kubeadm kubectl) do
   action :install
   notifies :lock, "package[kubelet, kubeadm, kubectl]"
 end
+
+execute 'pre-pull kubernetes images' do
+  command 'kubeadm config images pull'
+end
+
+execute 'create cluster' do
+  command 'kubeadm init'
+end
